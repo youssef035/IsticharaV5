@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "980939314039",
+    "project_id": "isticharav5",
+    "storage_bucket": "isticharav5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980939314039:android:b52b1a27435f26302a0772",
+        "android_client_info": {
+          "package_name": "com.isticharav5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFDoklgo_K1AoGkfHWe1PDxaPSmpsWqeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
