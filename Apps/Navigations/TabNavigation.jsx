@@ -10,6 +10,8 @@ import HomeScreen from "../Screens/HomeScreen";
 import ExploreScreen from "../Screens/ExploreScreen";
 import AddPostScreen from "../Screens/AddPostScreen";
 import ProfileScreen from "../Screens/ProfileScreen";
+import SuccessScreen from "../Screens/SuccessScreen";
+import HomeScreen2 from "../Screens/HomeScreen2";
 
 const Tab = createBottomTabNavigator();
 
@@ -23,8 +25,8 @@ export default function TabNavigation() {
       }}
     >
       <Tab.Screen
-        name="home"
-        component = {HomeScreen}
+        name="home2"
+        component = {HomeScreen2}
         options={{
           tabBarLabel: ({ color }) => (
             <Text style={{ color: color, fontSize: 12, marginBottom: 3 }}>
@@ -78,6 +80,20 @@ export default function TabNavigation() {
           // ),
         }}
       />
+      <Tab.Screen
+        name="success"
+        component={SuccessScreen}
+        options={{
+          tabBarLabel: ({ color }) => (
+            <Text style={{ color: color, fontSize: 12, marginBottom: 3 }}>
+              Profile
+            </Text>
+          ),
+          // tabBarIcon: ({ color, size }) => (
+          //   <Ionicons name="person-circle-outline" size={size} color={color} />
+          // ),
+        }}
+       />
     </Tab.Navigator>
   );
 }

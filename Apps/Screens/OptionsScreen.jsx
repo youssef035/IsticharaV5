@@ -4,7 +4,7 @@ import { View, TouchableOpacity, Text, ImageBackground, StyleSheet } from "react
 export default function OptionsScreen({navigation}){
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => navigation.navigate('home2')}>
+      <TouchableOpacity onPress={() => navigation.navigate('TabNav')}>
         <ImageBackground
           source={require('./../../assets/images/client.png')}
           style={styles.imageBackground}

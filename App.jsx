@@ -12,6 +12,8 @@ import ReservationForm from "./Apps/Screens/ReservationForm";
 import LawyerLogin from "./Apps/Screens/LawyerLogin";
 import ReservationDemo from "./Apps/Screens/ReservationDemo";
 import PaymentScreen from "./Apps/Screens/PaymentScreen";
+import { StripeProvider } from "@stripe/stripe-react-native";
+import SuccessScreen from "./Apps/Screens/SuccessScreen";
 
 
 export default function App(){
@@ -21,6 +23,7 @@ export default function App(){
   const Stack = createNativeStackNavigator();
 
   return(
+    <StripeProvider publishableKey="pk_test_51L9GCwEQFTf9CcGTvQ1Cz4KnufOMH1EUFqxjT23g2LkiTCt4OlTRCTLO4GhmEAFdH1NcrzEeyivHQpdrZr6mzppP00Lu8MlE1I">
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Welcome" component={WelcomeScreen} options={{ headerShown: false }}/>
@@ -33,8 +36,12 @@ export default function App(){
         <Stack.Screen name="reservation" component={ReservationDemo}/>
         <Stack.Screen name="login" component={LawyerLogin} options={{headerShown : false}} />
         <Stack.Screen name="pay" component={PaymentScreen} />
-       
+        <Stack.Screen name="success" component={SuccessScreen} />
       </Stack.Navigator>
     </NavigationContainer>
+
+    </StripeProvider>
+
+
   );
 }

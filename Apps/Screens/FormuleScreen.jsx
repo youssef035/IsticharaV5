@@ -7,7 +7,7 @@ import { launchImageLibrary } from 'react-native-image-picker';
 
 export default function FormuleScreen({navigation}){
 
-  const [selectedCity, setSelectedCity] = useState('Marrakech'); // Default selected city
+  const [selectedCity, setSelectedCity] = useState('Ville'); // Default selected city
   const [selectedImage, setSelectedImage] = useState(null); // State to store selected image
 
   const openImagePicker = () => {
@@ -118,6 +118,7 @@ export default function FormuleScreen({navigation}){
                 <Picker.Item label="Marrakech" value="Marrakech" />
                 <Picker.Item label="Rabat" value="Rabat" />
                 <Picker.Item label="Tanger" value="Tanger"/>
+                <Picker.Item label="Casablanca" value= "Casablanca"/>
               </Picker>
             </View>
             <TouchableOpacity 
